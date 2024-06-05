@@ -7,5 +7,9 @@ INCLUDE(cmake/ModuleImport.cmake)
 INCLUDE(cmake/ModuleCompileOptions.cmake)
 ModuleSetCompileOptions()
 
-ModuleImportAll("thirdparty")
-ExeImport("test" "")
+InterfaceImport("dmlexertk" "include" "")
+
+if (PROJECT_IS_TOP_LEVEL)
+    ExeImport("test" "dmlexertk")
+endif(PROJECT_IS_TOP_LEVEL)
+
