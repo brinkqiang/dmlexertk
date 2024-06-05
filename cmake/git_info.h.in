@@ -1,0 +1,6 @@
+// git_info.h.in
+#pragma once
+
+#define GIT_COMMIT_HASH "@GIT_COMMIT_HASH@"
+#define GIT_BRANCH_NAME "@GIT_BRANCH_NAME@"
+#define GIT_TAG "@GIT_TAG@"

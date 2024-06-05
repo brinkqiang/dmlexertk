@@ -12,3 +12,4 @@ CTestTestfile.cmake
 /lib/*
 /build/*
 /.vscode/*
+/cmake/git_info.h
